@@ -43,7 +43,7 @@ jobs:
         if: ${{inputs.xmlsname}}
         run: >
           mvn clean test
-          -Dsurefire.suiteXmlFile=${{inputs.xmlsname}}
+          -DXmlFile=testng_dockerC_parallel.xml
           -DenableBrowserOptions=true -Dmaven.test.failure.ignore=true
       - name: run specific tests with regex
         if: ${{inputs.testname}}
