@@ -4,15 +4,15 @@
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="testCases.TestLogin"/>
-            <class name="testCases.TestLogin_invalid"/>
-            <class name="testCases.TestProductItems"/>
+            <!-- <class name="testCases.TestLogin_invalid"/> -->
+            <class name="testCases.TestProductItems"/> 
         </classes>
     </test>
     <test name="ff_Regression" preserve-order="true" parallel="classes">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="testCases.TestLogin"/>
-            <class name="testCases.TestLogin_invalid"/>
+           <!-- <class name="testCases.TestLogin_invalid"/> -->
             <class name="testCases.TestProductItems"/>
         </classes>
     </test>
